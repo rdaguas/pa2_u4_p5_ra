@@ -27,6 +27,8 @@ public class PersonaRepositoryImpl implements IPersonaRepository {
 	@Override
 	public void actualizar(Persona persona) {
 		// TODO Auto-generated method stub
+		//simepre o busco el pbjeto perosna
+		//me aseguro que tenga la primary key
 		this.entityManager.merge(persona);
 	}
 
